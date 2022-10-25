@@ -1,17 +1,16 @@
 
 import './App.css';
-import Category from './components/categories/Category';
-import NavBar from './components/navbar/NavBar';
-
+import Main from './components/layout/Main';
 function App() {
   return (
     <div className="App">
+      <Main></Main>
       
       
       
      
-     <NavBar></NavBar>
-      <Category></Category>
+     {/* <NavBar></NavBar>
+      <Category></Category> */}
       
      
     </div>

@@ -1,14 +1,68 @@
 .nav{
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 30px;
-    border-radius: 16px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    /* margin-top: 30px; */
+    /* border-radius: 16px; */
+    /* border-top-left-radius: 16px;
+    border-top-right-radius: 16px; */
+    box-shadow: -4px -4px 8px #ffffff73, 4px 4px 6px rgb(107, 106, 106) ;
+    margin-bottom: 20px;
+    
+  }
+  .nav-bg{
     background: #dde1e7;
   }
-  
   .nav-btn{
     background: #dde1e7;
     height: 50px;
     width: 100px;
     margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: -4px -4px 8px #ffffff73, 4px 4px 6px rgba(94, 104, 121, .288);
+    font-weight: bold;
+    font-size: medium;
+  }
+
+  .nav-btn:hover{
+    background: #dde1e7;
+    height: 50px;
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: -4px -4px 8px white, 4px 4px 6px rgba(94, 104, 121, .288);
+    color:white;
+    
+  }
+  .sign-btn{
+    background: #dde1e7;
+    height: 30px;
+    width: 80px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: -4px -4px 8px #ffffff73, 4px 4px 6px rgba(94, 104, 121, .288);
+  }
+  .sign-btn:hover{
+    background: #dde1e7;
+    height: 30px;
+    width: 80px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: -4px -4px 8px white, 4px 4px 6px rgba(94, 104, 121, .288);
+    color: white;
+  }
+  .img-box{
+    height: 50px;
+    width: 50px;
+    background: #dde1e7;
+    box-shadow: -4px -4px 8px #ffffff73, 4px 4px 6px rgba(94, 104, 121, .288);
+    border-radius: 50%;
+   
+  }
+  .img-box:hover{
+    height: 50px;
+    width: 50px;
+    background: #dde1e7;
+    box-shadow: -4px -4px 8px white, 4px 4px 6px rgba(94, 104, 121, .288);
+    border-radius: 50%;
+   
   }
