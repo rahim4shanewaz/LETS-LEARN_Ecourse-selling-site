@@ -9,7 +9,7 @@ const Main = () => {
     return (
         <div>
             <Header> </Header>
-            <Category></Category>
+            {/* <Category></Category> */}
             <HomeBody></HomeBody>
 
             

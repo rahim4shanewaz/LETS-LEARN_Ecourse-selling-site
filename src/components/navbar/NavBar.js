@@ -43,14 +43,14 @@ const NavBar = () => {
               </div>
               <div className="navbar-center hidden lg:flex ">
                 <ul className=" menu-horizontal p-0">
-                    <div className='nav-btn m-2 '><li><button className='p-2'>button-1</button></li></div>
-                    <div className='nav-btn m-2'><li><button className='p-2'>button-2</button></li></div>
-                    <div className='nav-btn m-2'><li><button className='p-2'>button-3</button></li></div>
-                    <div className='nav-btn m-2'><li><button className='p-2'>button-4</button></li></div>
+                    <div className='nav-btn m-2 '><li><button className='p-3'>button-1</button></li></div>
+                    <div className='nav-btn m-2'><li><button className='p-3'>button-2</button></li></div>
+                    <div className='nav-btn m-2'><li><button className='p-3'>button-3</button></li></div>
+                    <div className='nav-btn m-2'><li><button className='p-3'>button-4</button></li></div>
                   
                 </ul>
               </div>
-              <div className="navbar-end hidden lg:flex ">
+              <div className="navbar-end hidden lg:flex text-center ">
               <div className='sign-btn m-2'><button className=''>Sign In</button></div>
               <div className='sign-btn m-2'><button className=''>Sign Up</button></div>
               <div className='sign-btn m-2'><button className=''>Log Out</button></div>

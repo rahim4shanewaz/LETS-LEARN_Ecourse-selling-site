@@ -26,11 +26,13 @@
   .nav-btn:hover{
     background: #dde1e7;
     height: 50px;
-    width: 100px;
+    width: 120px;
     margin-right: 20px;
     border-radius: 10px;
     box-shadow: -4px -4px 8px white, 4px 4px 6px rgba(94, 104, 121, .288);
     color:white;
+    transition: all 300ms;
+    
     
   }
   .sign-btn{
@@ -49,6 +51,7 @@
     border-radius: 5px;
     box-shadow: -4px -4px 8px white, 4px 4px 6px rgba(94, 104, 121, .288);
     color: white;
+    transition:500ms;
   }
   .img-box{
     height: 50px;
@@ -56,6 +59,7 @@
     background: #dde1e7;
     box-shadow: -4px -4px 8px #ffffff73, 4px 4px 6px rgba(94, 104, 121, .288);
     border-radius: 50%;
+    transition:500ms;
    
   }
   .img-box:hover{

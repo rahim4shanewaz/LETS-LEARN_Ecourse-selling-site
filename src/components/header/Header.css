@@ -42,10 +42,12 @@
     margin-bottom: 10px;
     position: relative;
     animation: text 3s 1;
+    color: #dde1e7;
 }
 .text2{
     font-size: 30px;
     animation: text 3s 1;
+    color: #dde1e7;
 }
 .text3{
     font-size: 40px;
@@ -53,11 +55,12 @@
     letter-spacing: 8px;
     margin-bottom: 10px;
     position: relative;
+    color: #94979b;
     
 }
 .text4{
     font-size: 30px;
-    
+    color: #94979b;
 }
 @keyframes text{
     0%{
@@ -71,4 +74,61 @@
         letter-spacing: 8px;
         
     }
+}
+/* .box-1 { background-color: #FF6766; } */
+
+.btn1 {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+  }
+  .btn-one {
+  color: #FFF;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn-one span {
+  transition: all 1s;
+}
+.btn-one::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255,255,255,0.5);
+  border-bottom-color: rgba(255,255,255,0.5);
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  letter-spacing: 2px;
+}
+.btn-one:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.btn-one::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255,255,255,0.1);
+}
+.btn-one:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
 }
