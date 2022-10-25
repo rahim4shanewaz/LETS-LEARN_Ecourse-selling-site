@@ -1,0 +1,14 @@
+.nav{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    border-radius: 16px;
+    background: #dde1e7;
+  }
+  
+  .nav-btn{
+    background: #dde1e7;
+    height: 50px;
+    width: 100px;
+    margin-right: 20px;
+  }
