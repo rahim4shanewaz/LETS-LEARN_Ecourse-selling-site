@@ -1,10 +1,14 @@
 import React from 'react';
 import './NavBar.css'
+import { BeakerIcon } from '@heroicons/react/24/solid'
 
 const NavBar = () => {
     return (
-        <div>
-            <div className='nav  nav-bg shadow '>
+        <div >
+         
+
+
+            <div className='nav w-full  nav-bg shadow  '>
           <div className="navbar nav-bg rounded-2xl bg-base-100">
               <div className="navbar-start">
 
@@ -15,7 +19,7 @@ const NavBar = () => {
                   </label>
 
 
-                  <ul tabIndex={0} className=" nav-bg menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                  <ul tabIndex={0} className=" text-center nav-bg menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 w-52">
                   
                     <div className='flex flex-col items-center'>
                     <div className='img-box mb-3'></div>
@@ -37,13 +41,14 @@ const NavBar = () => {
                 </div>
 
 
-                    <div className='border-2  hover:text-white p-2 rounded-tl-xl rounded-br-xl hover:border-white border-gray-400 '>  <p className='text-3xl font-bold'>Let's Learn</p></div>
+                    <div className='h-full w-50 px-2 p-3 border-gray-400 text-slate-400 '>  <p className='text-3xl font-bold'>Let's Learn</p>
+                    <hr/></div>
 
 
               </div>
               <div className="navbar-center hidden lg:flex ">
                 <ul className=" menu-horizontal p-0">
-                    <div className='nav-btn m-2 '><li><button className='p-3'>button-1</button></li></div>
+                    <div className='nav-btn m-2 '><li><button className='p-3'>button-1 </button></li></div>
                     <div className='nav-btn m-2'><li><button className='p-3'>button-2</button></li></div>
                     <div className='nav-btn m-2'><li><button className='p-3'>button-3</button></li></div>
                     <div className='nav-btn m-2'><li><button className='p-3'>button-4</button></li></div>
@@ -57,7 +62,7 @@ const NavBar = () => {
               <div className='img-box'></div>
               </div>
           </div>
-      </div>
+            </div>
             
         </div>
     );

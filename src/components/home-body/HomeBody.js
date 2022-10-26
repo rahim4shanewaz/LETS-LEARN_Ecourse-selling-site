@@ -111,15 +111,7 @@ const HomeBody = () => {
                 </div>
             </div>
             </div>
-
-
-
-
-
-
-
-
-            <div className='home-body-content mx-5'>
+            <div className='home-body-content mt-5 mx-5'>
                 <div className='grid  sm:grid-cols-1 lg:grid-cols-2 gap-3 p-10'>
                     <div className=' w-50 h-full p-10'>
                         <h1 className='text-3xl mb-6 text-color text-black font-black'>The Prodigious eLearning Courses for you</h1>

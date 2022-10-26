@@ -7,7 +7,7 @@ const Header = () => {
         <div>
             
             <div className='p-5 text-center '>
-            <NavBar></NavBar>
+            
             <div className="carousel w-full shadow-car">
   <div id="slide1" className="carousel-item relative w-full ">
     <div className='car-img '>

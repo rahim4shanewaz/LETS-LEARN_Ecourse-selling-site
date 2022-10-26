@@ -25,7 +25,7 @@
     height: 100%;
 
     background: #dde1e7;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    box-shadow: -4px -4px 8px #ffffff73, 4px 4px 6px rgb(39, 38, 38);
 
 }
 
@@ -48,6 +48,7 @@
 .container1 .card1 .slide {
 
     width: 180px;
+    background: white;
 
     height: 150px;
 
@@ -97,7 +98,7 @@
 
     transform: translateY(-100px);
 
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    box-shadow: -4px -4px 8px #ffffff73, 4px 4px 6px rgb(39, 38, 38);
 
 }
 
@@ -156,3 +157,5 @@
     
 
 } 
+
+
