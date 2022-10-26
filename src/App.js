@@ -1,10 +1,74 @@
 
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Category from './components/categories/Category';
+import Header from './components/header/Header';
 import Main from './components/layout/Main';
+import LogIn from './components/login/LogIn';
+import SignUp from './components/signUp/SignUp';
+import CheckOut from './components/checkOut/CheckOut';
+import Blog from './components/blog/Blog';
+import Faq from './components/faq/Faq';
+import NotFoundPage from './components/notFound/NotFoundPage';
+
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Main></Main>,
+      children: [
+        {
+          path: '/',
+          element: <Header></Header>
+        },
+        {
+          path: '/home',
+          element: <Header></Header>
+        },
+        
+        {
+          path: '/courses',
+          element: <Category></Category>
+        },
+        {
+          path:'/login',
+          element: <LogIn></LogIn>
+        },
+        {
+          path:'/signup',
+          element: <SignUp></SignUp>
+        },
+        {
+          path:'/checkout',
+          element: <CheckOut></CheckOut>
+        },
+        {
+          path: '/blog',
+          element: <Blog></Blog>
+
+        },
+        {
+          path: '/faq',
+          element: <Faq></Faq>
+        }
+      ] 
+    },
+
+    {
+      path: '*',
+      element: <NotFoundPage></NotFoundPage>
+
+    }
+  ])
+
+
+
+
+
   return (
     <div className="App">
-      <Main></Main>
+      <RouterProvider router={router}></RouterProvider>
+      
       
       
       

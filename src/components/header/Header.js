@@ -1,4 +1,5 @@
 import React from 'react';
+import HomeBody from '../home-body/HomeBody';
 import NavBar from '../navbar/NavBar';
 import './Header.css'
 
@@ -38,7 +39,7 @@ const Header = () => {
   </div> 
   <div id="slide2" className="carousel-item relative w-full">
     <div className='car-img'>
-    <img src="https://images.unsplash.com/photo-1661961111184-11317b40adb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" />
+    <img src="https://images.unsplash.com/photo-1475669698648-2f144fcaaeb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
     </div>
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide1" className="btn btn-circle">❮</a>
@@ -50,7 +51,7 @@ const Header = () => {
       <div className='text-black car-text flex flex-col justify-start '>
       <span className=' text3 text-4xl text-white'>Welcome</span>
         <span className=' text4 text-4xl text-white'>Let's Learn</span>
-        <p>This is the website you can Learn with best instructor and earn a strong skill <br /> We have lots of courses. you can find your courses here. Lets start your Journey with us.  </p>
+        <p className='text-white'>This is the website you can Learn with best instructor and earn a strong skill <br /> We have lots of courses. you can find your courses here. Lets start your Journey with us.  </p>
         <div class="box-1">
             <div class="btn1 btn-one">
                 <button><span> Check Our Courses</span></button>
@@ -104,7 +105,7 @@ const Header = () => {
 
       <div className='flex w-full'>
       <div className='text-white car-text2 flex flex-col justify-start'>
-      <span className=' text3 text-4xl text-white'>Welcome</span>
+      <span className=' text3 text-4xl'>Welcome</span>
         <span className=' text4 text-4xl text-white'>Let's Learn</span>
         <p>This is the website you can Learn with best instructor and earn a strong skill <br /> We have lots of courses. you can find your courses here. Lets start your Journey with us.  </p>
         <div class="box-1">
@@ -123,6 +124,7 @@ const Header = () => {
   </div>
 </div>
             </div>
+            <HomeBody></HomeBody>
         </div>
     );
 };

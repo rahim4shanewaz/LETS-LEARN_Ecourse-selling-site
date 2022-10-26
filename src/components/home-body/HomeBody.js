@@ -1,3 +1,5 @@
+import { faChalkboardTeacher, faCoffee, faGraduationCap, faStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './HomeBody.css'
 
@@ -12,9 +14,11 @@ const HomeBody = () => {
 
                         <div class="content">
 
-                            <div class="icon">
+                            <div class="icon flex flex-col items-center justify-center">
 
-                                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                               
+                                <FontAwesomeIcon className='text-5xl' icon={faGraduationCap}></FontAwesomeIcon>
+                                
 
                             </div>
 
@@ -28,11 +32,11 @@ const HomeBody = () => {
 
                             <h3>
 
-                                Hello there!
+                            <h1 className='text-2xl text-center'>Total Enrolled !</h1>
 
                             </h3>
-
-                            <p>Trust yourself and keep going.</p>
+                           
+                            <p><span className='text-xl'>4543</span> Students  <br /> Trust yourself and keep going.</p>
 
                         </div>
 
@@ -47,9 +51,9 @@ const HomeBody = () => {
 
                         <div class="content">
 
-                            <div class="icon">
+                            <div class="icon flex flex-col items-center justify-center">
 
-                                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                            <FontAwesomeIcon className='text-5xl' icon={faChalkboardTeacher}></FontAwesomeIcon>
 
                             </div>
 
@@ -63,11 +67,11 @@ const HomeBody = () => {
 
                             <h3>
 
-                                Hello there!
+                            <h1 className='text-2xl text-center'>Total Instructor !</h1>
 
                             </h3>
 
-                            <p>Trust yourself and keep going.</p>
+                            <p><span className='text-xl'>84</span> Instructor  <br />Learn with us and build Career.</p>
 
                         </div>
 
@@ -82,9 +86,9 @@ const HomeBody = () => {
 
                         <div class="content">
 
-                            <div class="icon">
+                            <div class="icon flex flex-col items-center justify-center">
 
-                                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                            <FontAwesomeIcon className='text-5xl' icon={faStar}></FontAwesomeIcon>
 
                             </div>
 
@@ -98,11 +102,11 @@ const HomeBody = () => {
 
                             <h3>
 
-                                Hello there!
+                            <h1 className='text-2xl text-center'>Our Ratings !</h1>
 
                             </h3>
 
-                            <p>Trust yourself and keep going.</p>
+                            <p><span className='text-xl'>4.5/5</span> 3154 total<br />Learn with good and be better.</p>
 
                         </div>
 
@@ -118,10 +122,10 @@ const HomeBody = () => {
                       
                       
                        <div className='text-color' >
-                       <h2 className='text-xl text-color font-black mb-6'>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Labore et dolore magna aliqua.</h2>
-                        <h3 className='mb-4 '>Lorem ipsum dolor, sit amet consectetur adipisicing bramet consectetur adipisicing <br />amet consectetur adipisicing</h3>
-                        <h3 className='mb-4' >Lorem ipsum dolor, sit amet consectetur adipisicing <br />amet consectetur adipisicingamet consectetur adipisicing</h3>
-                        <h3 className='mb-4'>Lorem ipsum dolor, sit amet consectetur adipisicing</h3>
+                       <h2 className='text-xl text-black font-black mb-6'>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Labore et dolore magna aliqua.</h2>
+                        <h3 className='mb-4 text-black'>Lorem ipsum dolor, sit amet consectetur adipisicing bramet consectetur adipisicing <br />amet consectetur adipisicing</h3>
+                        <h3 className='mb-4 text-black' >Lorem ipsum dolor, sit amet consectetur adipisicing <br />amet consectetur adipisicingamet consectetur adipisicing</h3>
+                        <h3 className='mb-4 text-black'>Lorem ipsum dolor, sit amet consectetur adipisicing</h3>
                         
                        </div>
 
@@ -130,12 +134,12 @@ const HomeBody = () => {
                         <div className='h-75 pt-10 rounded '>
                             
                             <div className='h-full box-shadow rounded-lg'>
-                            <img  className='h-full  object-cover rounded-lg' src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80" alt="" />
+                            <img  className='h-full  object-cover ' src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
                             </div>
                         </div>
                         <div className=' pb-10'>
                         <div className='h-full box-shadow rounded-lg'>
-                        <img className='h-full object-cover rounded-lg' src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80" alt="" />
+                        <img className='h-full object-cover ' src="https://images.unsplash.com/photo-1556911220-dabc1f02913a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
                         </div>
 
                         </div>

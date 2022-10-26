@@ -3,7 +3,7 @@ import './LogIn.css'
 
 const LogIn = () => {
     return (
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col mt-10 mb-10 items-center'>
             
             <div class="login-div">
   

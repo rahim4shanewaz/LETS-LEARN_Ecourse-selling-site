@@ -15,23 +15,23 @@
   }
   .nav-btn{
     background: #dde1e7;
-    height: 50px;
+    height: 40px;
     width: 100px;
     margin-right: 20px;
-    border-radius: 5px;
+    
     box-shadow:  -7px -7px 20px 0 rgba(255, 255, 255, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
     
-    font-size: medium;
+    
   }
 
   .nav-btn:hover{
     background: #dde1e7;
-    height: 50px;
+    height: 40px;
     width: 100px;
     margin-right: 20px;
-    border-radius: 10px;
-    box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, 0.7), inset 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
     
+    box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, 0.7), inset 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+    color: #4cc6eb;
     transition: all 600ms;
     
     
@@ -41,7 +41,7 @@
     height: 30px;
     width: 80px;
     margin-right: 10px;
-    border-radius: 5px;
+    
     box-shadow:  -7px -7px 20px 0 rgba(255, 255, 255, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
   }
   .sign-btn:hover{
@@ -49,9 +49,9 @@
     height: 30px;
     width: 80px;
     margin-right: 10px;
-    border-radius: 5px;
+    
     box-shadow: -4px -4px 8px white, 4px 4px 6px rgba(94, 104, 121, .288);
-    color: white;
+    color: #4cc6eb;
     transition:500ms;
   }
   .img-box{
@@ -63,12 +63,52 @@
     transition:500ms;
    
   }
+  .img-box2{
+    height: 50px;
+    width: 50px;
+    background: #dde1e7;
+    box-shadow:  -7px -7px 20px 0 rgba(255, 255, 255, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    transition:500ms;
+   
+  }
+  .img-box2:hover{
+    height: 50px;
+    width: 50px;
+    background: #dde1e7;
+     box-shadow:  -7px -7px 20px 0 rgba(255, 255, 255, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+   
+  }
   .img-box:hover{
     height: 50px;
     width: 50px;
     background: #dde1e7;
-    box-shadow: -4px -4px 8px white, 4px 4px 6px rgba(94, 104, 121, .288);
+    box-shadow:  -4px -4px 8px white, 4px 4px 6px rgba(94, 104, 121, .288);
     border-radius: 50%;
    
   }
-  
+  .logo{
+    color: #4cc6eb;
+    /* border: 1px solid  #4cc6eb; */
+    box-shadow:  -7px -7px 20px 0 rgba(255, 255, 255, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+  .active{
+    color: #4cc6eb;
+    border: 1px solid #4cc6eb;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .active1{
+    color: #4cc6eb;
+    border: 1px solid #4cc6eb;
+    border-radius: 60%;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding: 4px;
+  }
+  .not-active{
+    
+    padding-left: 4px;
+    padding-right: 4px;
+  }
