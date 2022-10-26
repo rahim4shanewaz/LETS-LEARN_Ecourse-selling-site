@@ -10,6 +10,7 @@ import CheckOut from './components/checkOut/CheckOut';
 import Blog from './components/blog/Blog';
 import Faq from './components/faq/Faq';
 import NotFoundPage from './components/notFound/NotFoundPage';
+import PrivateRoute from './privateRoute/PrivateRoute';
 
 function App() {
   const router = createBrowserRouter([
@@ -40,11 +41,11 @@ function App() {
         },
         {
           path:'/checkout',
-          element: <CheckOut></CheckOut>
+          element: <PrivateRoute><CheckOut></CheckOut></PrivateRoute>
         },
         {
           path: '/blog',
-          element: <Blog></Blog>
+          element: <PrivateRoute><Blog></Blog></PrivateRoute>
 
         },
         {

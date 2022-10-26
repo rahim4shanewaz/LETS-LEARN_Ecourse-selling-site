@@ -63,6 +63,13 @@
     transition:500ms;
    
   }
+  .img-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
   .img-box2{
     height: 50px;
     width: 50px;
