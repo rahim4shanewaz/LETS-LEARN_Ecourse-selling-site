@@ -1,9 +1,10 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/ContextApi';
 import './LogIn.css'
 
 const LogIn = () => {
+  const [error, setError] = useState('');
 
   const {signIn} = useContext(AuthContext);
   const navigate = useNavigate();
@@ -26,12 +27,14 @@ const LogIn = () => {
       const user = result.user;
       console.log(user);
       form.reset();
+      setError('');
       navigate(from, {replace: true});
       
       
   })
   .catch( error => {
       console.error(error);
+      setError(error.message)
   })
 
     
@@ -50,6 +53,7 @@ const LogIn = () => {
   </div>
   <button className="signin-button">Login</button>
   </form>
+  <div>{error}</div>
   <div className="link">
     <Link to={'/signup'} className="label-text-alt link link-hover">Create a new account</Link>
   </div>

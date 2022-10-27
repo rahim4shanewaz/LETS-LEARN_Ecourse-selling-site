@@ -11,6 +11,7 @@ import Blog from './components/blog/Blog';
 import Faq from './components/faq/Faq';
 import NotFoundPage from './components/notFound/NotFoundPage';
 import PrivateRoute from './privateRoute/PrivateRoute';
+import TermsAndCondition from './components/termsAndCondition/TermsAndCondition';
 
 function App() {
   const router = createBrowserRouter([
@@ -47,6 +48,10 @@ function App() {
           path: '/blog',
           element: <PrivateRoute><Blog></Blog></PrivateRoute>
 
+        },
+        {
+          path:'/terms',
+          element: <TermsAndCondition></TermsAndCondition>
         },
         {
           path: '/faq',

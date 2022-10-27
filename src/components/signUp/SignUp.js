@@ -1,16 +1,17 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useContext } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { Form, Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/ContextApi';
 import './SignUp.css'
 import { BeakerIcon } from '@heroicons/react/24/solid'
 
 const SignUp = () => {
 
-  const {createUser, signInWithGoogle, signInWithGit} = useContext(AuthContext);
+  const {createUser, signInWithGoogle,updateUserprofile, signInWithGit} = useContext(AuthContext);
   const navigate =useNavigate();
   const location =useLocation();
   const from = location.state?.from?.pathname || '/';
+  const [accepted, setAccepted] = useState(false); 
 
 
 
@@ -28,6 +29,8 @@ const SignUp = () => {
       const user = result.user;
       console.log(user);
       form.reset();
+      handleUpadetUserProfile(name, imgUrl);
+
       navigate(from, {replace: true});
 
 
@@ -36,6 +39,20 @@ const SignUp = () => {
       console.error(error);
     })
   }
+  const  handleUpadetUserProfile = (name, imgUrl) =>{
+    const profile = {
+      displayName: name,
+      photoURL: imgUrl
+    }
+    updateUserprofile(profile)
+    .then(() =>{})
+    .catch(error => console.error(error));
+  }
+
+
+
+
+
   const handleGoogleSignIn = () =>{
     signInWithGoogle()
     .then(result => {
@@ -62,8 +79,13 @@ const handleGitHubSignIn = () =>{
   })
   .catch( error => {
     console.error(error);
-})
+});
 
+
+
+}
+const handleAccepted = event =>{
+  setAccepted(event.target.checked);
 
 }
     return (
@@ -80,8 +102,18 @@ const handleGitHubSignIn = () =>{
     <div className="username"><input  name= 'email'type="email" className="user-input" placeholder="email" /></div>
     <div className="password"><input name= 'password' type="password" className="pass-input" placeholder="password" /></div>
   </div>
-  <button className="signin-button mb-5">Register</button>
+
+  <button className="signin-button mb-5" disabled={!accepted}>Register</button>
  </form>
+            
+            <div  className="form-control">
+            <label className="cursor-pointer label">
+            <input onClick={handleAccepted} type="checkbox"   className="checkbox checkbox-accent" />
+              <span className="label-text">Accept terms and Conditions <NavLink className={ 'text-emerald-500'} to='/terms'>Terms and Conditions</NavLink></span>
+             
+            </label>
+           </div>
+            
  <div>
   <h1 className='text-center text-xl mb-3'>SignUp with </h1>
  <div>
