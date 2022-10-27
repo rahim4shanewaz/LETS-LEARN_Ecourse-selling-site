@@ -1,14 +1,32 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 import './CheckOut.css'
 
 const CheckOut = () => {
+    const course = useLoaderData();
     return (
         <div>
-            <div className='flex box-container gap-3  justify-center items-center'>
+            <div className='flex box-container gap-3 flex-col justify-center items-center'>
             
-            <div class="login-div1">
+            <div class="login-div1 w-2/4">
+                <div className='border p-3 w-full border-gray-500'>
+                   <div className='flex'>
+                   <div className='w-1/5 mr-5'>
+                        <img className='w-full' src={course.image} alt="" />
+                    </div>
+                    <div className='text-black'>
+                    <h1 >Product name: <span className='text-black ml-5 font-black'>{course.title}</span> </h1>
+                    <h1 >Product price: <span className='text-black ml-5 font-black'>${course.price}</span> </h1>
+                    <hr />
+                    <h1 className='mt-2' >Total cost: <span className='text-black ml-5 font-black'>${course.price}</span> </h1>
+
+                    
+                   
+                    </div>
+                   </div>
+                </div>
   
-                <div class="title">Register First</div>
+                {/* <div class="title">Register First</div>
                 
                 <div class="fields1">
                     <div class="username">
@@ -22,17 +40,17 @@ const CheckOut = () => {
                 <button class="signin-button">Register</button>
                 <div class="link">
                     <a href="#">Already have an account? </a> <br /> <a href="#">Log In</a>
-                </div>
+                </div> */}
              </div>
 
 
 
              
-             <div class="login-div1 p-2">
+             <div class="login-div1 w-2/4 p-2">
   
                
                 
-                <div className='border p-3 border-gray-500'>
+                <div className='border p-3 w-full border-gray-500'>
                 <div class="fields1 text-black">
                     <h1 className='text-3xl'>Payment Details</h1>
                     <p>Complete your purchase by providing your Payment info </p>

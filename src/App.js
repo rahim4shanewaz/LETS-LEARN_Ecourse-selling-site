@@ -12,6 +12,7 @@ import Faq from './components/faq/Faq';
 import NotFoundPage from './components/notFound/NotFoundPage';
 import PrivateRoute from './privateRoute/PrivateRoute';
 import TermsAndCondition from './components/termsAndCondition/TermsAndCondition';
+import CourseDetails from './components/courseDetails/CourseDetails';
 
 function App() {
   const router = createBrowserRouter([
@@ -33,6 +34,12 @@ function App() {
           element: <Category></Category>
         },
         {
+          path:"/courses/:id",
+          element:<CourseDetails></CourseDetails>,
+          loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`)
+
+        },
+        {
           path:'/login',
           element: <LogIn></LogIn>
         },
@@ -41,8 +48,9 @@ function App() {
           element: <SignUp></SignUp>
         },
         {
-          path:'/checkout',
-          element: <PrivateRoute><CheckOut></CheckOut></PrivateRoute>
+          path:'/checkout/:id',
+          element: <PrivateRoute><CheckOut></CheckOut></PrivateRoute>,
+          loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`)
         },
         {
           path: '/blog',

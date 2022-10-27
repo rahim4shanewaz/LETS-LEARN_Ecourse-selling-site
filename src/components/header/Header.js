@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import HomeBody from '../home-body/HomeBody';
 import NavBar from '../navbar/NavBar';
 import './Header.css'
@@ -112,6 +113,7 @@ const Header = () => {
             <div class="btn1 btn-one">
                 <button><span> Check Our Courses</span></button>
             </div>
+           
         </div>
       </div>
       </div>

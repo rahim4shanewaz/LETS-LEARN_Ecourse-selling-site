@@ -131,7 +131,7 @@ const HomeBody = () => {
 
                     </div>
                     <div className=' grid grid-cols-2 w-50 h-full text-white gap-5'>
-                        <div className='h-75 pt-10 rounded '>
+                        <div className='h-100 pt-10 rounded '>
                             
                             <div className='h-full box-shadow rounded-lg'>
                             <img  className='h-full  object-cover ' src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
@@ -139,7 +139,7 @@ const HomeBody = () => {
                         </div>
                         <div className=' pb-10'>
                         <div className='h-full box-shadow rounded-lg'>
-                        <img className='h-full object-cover ' src="https://images.unsplash.com/photo-1556911220-dabc1f02913a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+                        <img className='h-full object-cover ' src="https://images.unsplash.com/photo-1602261320832-b087fc36979a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="" />
                         </div>
 
                         </div>

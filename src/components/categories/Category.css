@@ -4,3 +4,6 @@
     margin: auto;
     background-color: darkgray;
 }
+.box-shadow{
+    box-shadow: -4px -4px 8px #ffffff73, 4px 4px 6px rgb(39, 38, 38);
+}
