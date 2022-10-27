@@ -24,9 +24,9 @@ const Header = () => {
         <span className=' text1 text-4xl text-white'>Welcome</span>
         <span className=' text2 text-4xl text-white'>Let's Learn</span>
         <p >This is the website you can Learn with best instructor and earn a strong skill <br /> We have lots of courses. you can find your courses here. Lets start your Journey with us.  </p>
-        <div class="box-1">
-            <div class="btn1 btn-one">
-                <button><span> Check Our Courses</span></button>
+        <div class="box-1 mt-3">
+            <div >
+            <NavLink to="/courses"><button className="btn btn-outline btn-secondary">>Check Our All Courses</button></NavLink>
             </div>
         </div>
       </div>
@@ -53,9 +53,9 @@ const Header = () => {
       <span className=' text3 text-4xl text-white'>Welcome</span>
         <span className=' text4 text-4xl text-white'>Let's Learn</span>
         <p className='text-white'>This is the website you can Learn with best instructor and earn a strong skill <br /> We have lots of courses. you can find your courses here. Lets start your Journey with us.  </p>
-        <div class="box-1">
-            <div class="btn1 btn-one">
-                <button><span> Check Our Courses</span></button>
+        <div class="box-1 mt-3">
+            <div >
+            <NavLink to="/courses"><button className="btn btn-outline btn-secondary">>Check Our All Courses</button></NavLink>
             </div>
         </div>
       </div>
@@ -78,9 +78,9 @@ const Header = () => {
             <span className=' text3 text-4xl text-white'>Welcome</span>
         <span className=' text4 text-4xl text-white'>Let's Learn</span>
         <p>This is the website you can Learn with best instructor and earn a strong skill <br /> We have lots of courses. you can find your courses here. Lets start your Journey with us.  </p>
-        <div class="box-1">
-            <div class="btn1 btn-one">
-                <button><span> Check Our Courses</span></button>
+        <div class="box-1 mt-3">
+            <div >
+            <NavLink to="/courses"><button className="btn btn-outline btn-secondary">>Check Our All Courses</button></NavLink>
             </div>
         </div>
       </div>
@@ -109,11 +109,10 @@ const Header = () => {
       <span className=' text3 text-4xl'>Welcome</span>
         <span className=' text4 text-4xl text-white'>Let's Learn</span>
         <p>This is the website you can Learn with best instructor and earn a strong skill <br /> We have lots of courses. you can find your courses here. Lets start your Journey with us.  </p>
-        <div class="box-1">
-            <div class="btn1 btn-one">
-                <button><span> Check Our Courses</span></button>
+        <div class="box-1 mt-3">
+            <div >
+            <NavLink to="/courses"><button className="btn btn-outline btn-secondary">>Check Our All Courses</button></NavLink>
             </div>
-           
         </div>
       </div>
       </div>

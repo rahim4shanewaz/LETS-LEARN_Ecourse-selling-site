@@ -97,10 +97,10 @@ const handleAccepted = event =>{
   
  <form onSubmit={HandleSubmit}>
  <div className="fields">
-    <div className="username"><input name= 'name' type="text" className="user-input" placeholder="name"  /></div>
+    <div className="username"><input name= 'name' type="text" className="user-input" placeholder="full name"  /></div>
     <div className="username"><input name= 'imgUrl' type="text" className="user-input" placeholder="image url" /></div>
-    <div className="username"><input  name= 'email'type="email" className="user-input" placeholder="email" /></div>
-    <div className="password"><input name= 'password' type="password" className="pass-input" placeholder="password" /></div>
+    <div className="username"><input  name= 'email'type="email" className="user-input" placeholder="email" required /></div>
+    <div className="password"><input name= 'password' type="password" className="pass-input" placeholder="password" required /></div>
   </div>
 
   <button className="signin-button mb-5" disabled={!accepted}>Register</button>
@@ -117,8 +117,8 @@ const handleAccepted = event =>{
  <div>
   <h1 className='text-center text-xl mb-3'>SignUp with </h1>
  <div>
- <button onClick={handleGoogleSignIn} className="mb-5 signin-button">Log In With Google</button>
- <button onClick={handleGitHubSignIn} className="signin-button">Log In With GitHub</button>
+ <button onClick={handleGoogleSignIn} className="mb-5 signin-button">Google</button>
+ <button onClick={handleGitHubSignIn} className="signin-button">GitHub</button>
  </div>
  </div>
   

@@ -44,7 +44,7 @@ const LogIn = () => {
             
             <div className="login-div">
   
-  <div className="title">Please Log In</div>
+  <div className="title">Please sign  In</div>
   
   <form onSubmit={HandleSubmit}>
   <div className="fields">

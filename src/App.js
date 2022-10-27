@@ -13,6 +13,8 @@ import NotFoundPage from './components/notFound/NotFoundPage';
 import PrivateRoute from './privateRoute/PrivateRoute';
 import TermsAndCondition from './components/termsAndCondition/TermsAndCondition';
 import CourseDetails from './components/courseDetails/CourseDetails';
+import About from './components/about/AboutUs';
+import AboutUs from './components/about/AboutUs';
 
 function App() {
   const router = createBrowserRouter([
@@ -36,7 +38,7 @@ function App() {
         {
           path:"/courses/:id",
           element:<CourseDetails></CourseDetails>,
-          loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`)
+          loader: ({params}) => fetch(`https://my-projects-10-server.vercel.app/product/${params.id}`)
 
         },
         {
@@ -50,11 +52,16 @@ function App() {
         {
           path:'/checkout/:id',
           element: <PrivateRoute><CheckOut></CheckOut></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`)
+          loader: ({params}) => fetch(`https://my-projects-10-server.vercel.app/product/${params.id}`)
         },
         {
           path: '/blog',
-          element: <PrivateRoute><Blog></Blog></PrivateRoute>
+          element: <Blog></Blog>
+
+        },
+        {
+          path:'/aboutus',
+          element:<AboutUs></AboutUs>
 
         },
         {

@@ -7,17 +7,17 @@ import './Category.css';
 const Category = () => {
     const [categories, setCategories] = useState([]);
     useEffect(() =>{
-        fetch('http://localhost:5000/allProducts')
+        fetch('https://my-projects-10-server.vercel.app/allProducts')
         .then(res => res.json())
         .then(data => setCategories(data));
     },[])
     console.log(categories.length);
     return (
         <div>
-            <div className='flex '>
-                <div className='w-1/4 bg-white m-10 box-shadow'>
+            <div className='   lg:flex'>
+                <div className=' bg-white m-10 box-shadow'>
 
-                   <div className='p-5'><h1 className='text-2xl mb-3 font-black text-center mt-4'> Total Categories: {categories.length}</h1>
+                   <div className='p-5'><h1 className='text-2xl mb-3 font-black text-center mt-4'> Total Courses: {categories.length}</h1>
                    <hr /></div>
 
                     {

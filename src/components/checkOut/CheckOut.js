@@ -6,12 +6,12 @@ const CheckOut = () => {
     const course = useLoaderData();
     return (
         <div>
-            <div className='flex box-container gap-3 flex-col justify-center items-center'>
+            <div className='flex box-container gap-3 w-full flex-col justify-center items-center'>
             
-            <div class="login-div1 w-2/4">
+            <div class="login-div5 w-3/6">
                 <div className='border p-3 w-full border-gray-500'>
-                   <div className='flex'>
-                   <div className='w-1/5 mr-5'>
+                   <div className='lg:flex'>
+                   <div className='lg:w-1/5 mr-5'>
                         <img className='w-full' src={course.image} alt="" />
                     </div>
                     <div className='text-black'>
@@ -46,7 +46,7 @@ const CheckOut = () => {
 
 
              
-             <div class="login-div1 w-2/4 p-2">
+             <div class="login-div5 w-2/4 p-2">
   
                
                 
@@ -66,12 +66,12 @@ const CheckOut = () => {
                     <p>Enter VAT number</p>
                     <div class="username"><input type="text" class="user-input" placeholder="VAT number" /></div>
                     <p>Enter Billing address</p>
-                    <div className='flex gap-3'>
+                    <div className='lg:flex flex-col gap-3'>
 
                     <div class="username"><input type="text" class="user-input" placeholder="Address" /></div>
                     <div class="username"><input type="text" class="user-input" placeholder="City" /></div>
                     </div>
-                    <div className='flex gap-3'>
+                    <div className='lg:flex flex-col gap-3'>
                         
                     <div class="username"><input type="text" class="user-input" placeholder="ZIP" /></div>
                     <div class="username"><input type="text" class="user-input" placeholder="State" /></div>

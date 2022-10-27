@@ -39,10 +39,26 @@ const handleLogout = () => {
                   <ul tabIndex={0} className=" text-center nav-bg menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 w-52">
                   
                     <div className='flex flex-col '>
-                    <div className='img-box mb-3'></div>
-                    <div className='sign-btn m-2 flex justify-center items-center'><NavLink to='/login'><button className=''>Sign In</button></NavLink></div>
-              <div className='sign-btn m-2 flex justify-center items-center'><NavLink to='/signup'><button className=''>Register</button></NavLink></div>
-              <div className='sign-btn m-2 flex justify-center items-center'><button className=''>Log Out</button></div>
+                    { user?.uid &&
+                <div className='img-box' title={user.email}>
+                { <span><img className='w-100 h-100' src={user.photoURL} alt="" /> </span> }
+                </div>
+              }
+
+
+
+            { user?.uid ?
+                <div className='sign-btn mb-10 flex justify-center items-center'><button onClick={handleLogout} className=''>Log Out</button></div> :
+
+
+                <div className='mb-10'>
+                <div className='sign-btn m-2 flex justify-center items-center'><NavLink className={({isActive}) => isActive ? "active" : "not-active"} to='/login'><button className=''>Sign In</button></NavLink></div>
+                <div className='sign-btn m-2 flex justify-center items-center'><NavLink className={({isActive}) => isActive ? "active" : "not-active"} to='/signup'><button className=''>Register</button></NavLink></div>
+                </div>
+              }
+
+
+
                     </div>
 
 
@@ -72,23 +88,44 @@ const handleLogout = () => {
               </div>
               <div className="navbar-center hidden lg:flex ">
                 <ul className=" menu-horizontal p-0">
-                    <div className='nav-btn flex justify-center items-center '><NavLink className={({isActive}) => isActive ? "active" : "not-active"} to='/blog' ><button className=''>Blog</button></NavLink></div>
+                   
 
                     <div className='nav-btn flex justify-center items-center '><NavLink className={({isActive}) => isActive ? "active" : "not-active"} to='/courses' ><button className=''>Courses</button></NavLink></div>
+                    <div className='nav-btn flex justify-center items-center '><NavLink className={({isActive}) => isActive ? "active" : "not-active"} to='/blog' ><button className=''>Blog</button></NavLink></div>
 
 
                     <div className='img-box2 flex mx-5 justify-center items-center '><NavLink className={({isActive}) => isActive ? "active1" : "not-active"} to='/home' ><button className=''><FontAwesomeIcon className='text-2xl' icon={faHouse}></FontAwesomeIcon></button></NavLink></div>
 
-                    <div className='nav-btn flex justify-center items-center '><NavLink className={({isActive}) => isActive ? "active" : "not-active"} to='/blog' ><button className=''>Blog</button></NavLink></div>
+                   
 
                     <div className='nav-btn flex justify-center items-center '><NavLink className={({isActive}) => isActive ? "active" : "not-active"} to='/faq' ><button className=''>FAQ</button></NavLink></div>
+                    <div className='nav-btn flex justify-center items-center '><NavLink className={({isActive}) => isActive ? "active" : "not-active"} to='/aboutus' ><button className=''>About Us</button></NavLink></div>
                     <div>
-                      <h1>{user?.uid && <span className='text-white mx-3' >welcome, {user.displayName}</span> }</h1>
+
+                                          {/* <div className='flex gap-3' >
+                        
+                                                <p className='text-white'>Light</p> 
+                                                <input type="checkbox" className="toggle" />
+                                                <p>Dark</p>
+                       
+                                          </div> */}
+
+
+
+                      {/* <h1>{user?.uid && <span className='text-white mx-3' >welcome, {user.email}</span> }</h1> */}
                     </div>
                   
                 </ul>
               </div>
               <div className="navbar-end hidden lg:flex text-center ">
+                 
+                <small> <div className='flex gap-3' >
+                        
+                        <p className='text-white'>Light</p> 
+                        <input type="checkbox" className="toggle" />
+                        <p>Dark</p>
+
+                  </div></small>
 
               { user?.uid ?
                 <div className='sign-btn m-2 flex justify-center items-center'><button onClick={handleLogout} className=''>Log Out</button></div> :
@@ -106,7 +143,7 @@ const handleLogout = () => {
 
 
               { user?.uid &&
-                <div className='img-box' title={user.email}>
+                <div className='img-box' title={user.displayName}>
                 { <span><img className='w-100 h-100' src={user.photoURL} alt="" /> </span> }
                 </div>
               }
