@@ -1,11 +1,16 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/ContextApi';
 import './SignUp.css'
+import { BeakerIcon } from '@heroicons/react/24/solid'
 
 const SignUp = () => {
 
-  const {createUser, signInWithGoogle} = useContext(AuthContext);
+  const {createUser, signInWithGoogle, signInWithGit} = useContext(AuthContext);
+  const navigate =useNavigate();
+  const location =useLocation();
+  const from = location.state?.from?.pathname || '/';
 
 
 
@@ -23,6 +28,7 @@ const SignUp = () => {
       const user = result.user;
       console.log(user);
       form.reset();
+      navigate(from, {replace: true});
 
 
     })
@@ -34,6 +40,7 @@ const SignUp = () => {
     signInWithGoogle()
     .then(result => {
         const user = result.user;
+        navigate(from, {replace: true});
         console.log(user)
         
     })
@@ -42,27 +49,50 @@ const SignUp = () => {
     })
 
 }
+
+
+
+const handleGitHubSignIn = () =>{
+  signInWithGit()
+  .then(result => {
+    const user = result.user;
+    navigate(from, {replace: true});
+    console.log(user)
+    
+  })
+  .catch( error => {
+    console.error(error);
+})
+
+
+}
     return (
         <div className='flex flex-col items-center'>
             
-            <div class="login-div">
+            <div className="login-div">
   
-  <div class="title">Register First</div>
+  <div className="title">Register First</div>
   
  <form onSubmit={HandleSubmit}>
- <div class="fields">
-    <div class="username"><input name= 'name' type="text" class="user-input" placeholder="name"  /></div>
-    <div class="username"><input name= 'imgUrl' type="text" class="user-input" placeholder="image url" /></div>
-    <div class="username"><input  name= 'email'type="email" class="user-input" placeholder="email" /></div>
-    <div class="password"><input name= 'password' type="password" class="pass-input" placeholder="password" /></div>
+ <div className="fields">
+    <div className="username"><input name= 'name' type="text" className="user-input" placeholder="name"  /></div>
+    <div className="username"><input name= 'imgUrl' type="text" className="user-input" placeholder="image url" /></div>
+    <div className="username"><input  name= 'email'type="email" className="user-input" placeholder="email" /></div>
+    <div className="password"><input name= 'password' type="password" className="pass-input" placeholder="password" /></div>
   </div>
-  <button class="signin-button mb-5">Register</button>
+  <button className="signin-button mb-5">Register</button>
  </form>
- <button onClick={handleGoogleSignIn} class="signin-button">Log In With Google</button>
+ <div>
+  <h1 className='text-center text-xl mb-3'>SignUp with </h1>
+ <div>
+ <button onClick={handleGoogleSignIn} className="mb-5 signin-button">Log In With Google</button>
+ <button onClick={handleGitHubSignIn} className="signin-button">Log In With GitHub</button>
+ </div>
+ </div>
   
   
   
-  <div class="link">
+  <div className="link">
     <Link to={'/login'} className="label-text-alt link link-hover">Already have an Account, Log in?</Link>
   
   </div>

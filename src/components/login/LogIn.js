@@ -19,7 +19,7 @@ const LogIn = () => {
     
     const email= form.email.value;
     const password= form.password.value;
-    console.log(email,password);
+    // console.log(email,password);
 
     signIn(email,password)
     .then(result => {
@@ -39,18 +39,18 @@ const LogIn = () => {
     return (
         <div className='flex flex-col mt-10 mb-10 items-center'>
             
-            <div class="login-div">
+            <div className="login-div">
   
-  <div class="title">Please Log In</div>
+  <div className="title">Please Log In</div>
   
   <form onSubmit={HandleSubmit}>
-  <div class="fields">
-    <div class="username"><input name='email' type="username" class="user-input" placeholder="email" required /></div>
-    <div class="password"><input name= 'password' type="password" class="pass-input" placeholder="password" required /></div>
+  <div className="fields">
+    <div className="username"><input name='email' type="username" className="user-input" placeholder="email" required /></div>
+    <div className="password"><input name= 'password' type="password" className="pass-input" placeholder="password" required /></div>
   </div>
-  <button class="signin-button">Login</button>
+  <button className="signin-button">Login</button>
   </form>
-  <div class="link">
+  <div className="link">
     <Link to={'/signup'} className="label-text-alt link link-hover">Create a new account</Link>
   </div>
 </div>

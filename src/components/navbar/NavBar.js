@@ -83,14 +83,14 @@ const handleLogout = () => {
 
                     <div className='nav-btn flex justify-center items-center '><NavLink className={({isActive}) => isActive ? "active" : "not-active"} to='/faq' ><button className=''>FAQ</button></NavLink></div>
                     <div>
-                      <h1>{user?.email && <span className='text-white mx-3' >welcome, {user.email}</span> }</h1>
+                      <h1>{user?.uid && <span className='text-white mx-3' >welcome, {user.displayName}</span> }</h1>
                     </div>
                   
                 </ul>
               </div>
               <div className="navbar-end hidden lg:flex text-center ">
 
-              { user?.email ?
+              { user?.uid ?
                 <div className='sign-btn m-2 flex justify-center items-center'><button onClick={handleLogout} className=''>Log Out</button></div> :
 
 
