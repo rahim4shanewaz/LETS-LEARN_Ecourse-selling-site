@@ -132,6 +132,14 @@ const handleLogout = () => {
               </div>
 
 
+
+              <div className='border p-1 border-white'>
+              <div className='bg-white text-black font-xl font-bold p-1 hover:'>
+                <h1>L||L</h1>
+              </div>
+              </div>
+
+
               
               <div className="hidden lg:flex text-center gap-3 justify-center items-center ">
               <small className='mr-14'> 

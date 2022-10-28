@@ -1,20 +1,33 @@
+## Redirect Page after login
+
+after first login , try log out then try access to private rout, it will work
+
 # website represents 
 
 this website represents media related skill build uo courses
 
 # single page website
-
 this website made with react and it is a single page website
+# authentication
+
+user  can use this website with google and github also any email register
+
+
 
 # style code
 
 this website made with tailwind and duisyUI
 
+#  responsiveness
+
+this website is fully responsive
+
 # other tools used in this web site
->> react router
->> node express
->> firebase Authentication
->>react to pdf 
+1. react router
+2. node express
+3. firebase Authentication
+4. react to pdf 
+
 
 
 
