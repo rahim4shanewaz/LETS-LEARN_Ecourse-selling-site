@@ -11,10 +11,10 @@ this website made with react and it is a single page website
 this website made with tailwind and duisyUI
 
 # other tools used in this web site
-(.) react router
-(.) node express
-(.) firebase Authentication
-(.)rect to pdf 
+>> react router
+>> node express
+>> firebase Authentication
+>>react to pdf 
 
 
 
