@@ -1,3 +1,31 @@
+# website represents 
+
+this website represents media related skill build uo courses
+
+# single page website
+
+this website made with react and it is a single page website
+
+# style code
+
+this website made with tailwind and duisyUI
+
+# other tools used in this web site
+(.) react router
+(.) node express
+(.) firebase Authentication
+(.)rect to pdf 
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

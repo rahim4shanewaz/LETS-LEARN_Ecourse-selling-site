@@ -4,6 +4,12 @@ import './Faq.css'
 const Faq = () => {
     return (
         <div className='m-1o p-10'>
+               <div className="flex flex-col gap-5 mb-10 ">
+                    <h1 className="text-5xl font-bold">Here is some Questions <br />and Answers</h1>
+                    <p className=" font-bold">Learn some info, Hunt with <span className=" bg-black p-1 text-white">LET'S LEARN</span> </p>
+                </div>
+
+
             <div className='mb-5'>
             <h1 className='text-2xl'>What are perks and other benefits like at Let's Learn?</h1>
             <p>Pros <br />

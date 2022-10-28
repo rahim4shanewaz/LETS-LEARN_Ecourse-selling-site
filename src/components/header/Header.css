@@ -126,9 +126,21 @@
   height: 100%;
   z-index: 1;
   transition: all 0.3s;
-  background-color: rgba(42, 222, 235, 0.1);
+  background-color: rgba(236, 31, 175, 0.1);
 }
 .btn-one:hover::after {
   opacity: 0; 
   transform: scale(0.1, 1);
+}
+
+
+
+.bgs{
+    background: url(https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    margin: 0;
+    padding: 0;
 }

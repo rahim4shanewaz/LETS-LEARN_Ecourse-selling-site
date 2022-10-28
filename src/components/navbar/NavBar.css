@@ -55,10 +55,10 @@
     transition:500ms;
   }
   .img-box{
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     background: #dde1e7;
-    box-shadow:  -7px -7px 20px 0 rgba(255, 255, 255, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+   
     border-radius: 50%;
     transition:500ms;
    
@@ -74,7 +74,7 @@
     height: 50px;
     width: 50px;
     background: #dde1e7;
-    box-shadow:  -7px -7px 20px 0 rgba(255, 255, 255, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+    
     border-radius: 50%;
     transition:500ms;
    
@@ -91,7 +91,7 @@
     height: 50px;
     width: 50px;
     background: #dde1e7;
-    box-shadow:  -4px -4px 8px white, 4px 4px 6px rgba(94, 104, 121, .288);
+    
     border-radius: 50%;
    
   }
@@ -101,21 +101,32 @@
     box-shadow:  -7px -7px 20px 0 rgba(255, 255, 255, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
   }
   .active{
-    color: #4cc6eb;
-    border: 1px solid #4cc6eb;
-    padding-left: 4px;
-    padding-right: 4px;
+   color: rgb(12, 211, 71);
+   font-size: large;
+ 
+    
+  
   }
   .active1{
-    color: #4cc6eb;
-    border: 1px solid #4cc6eb;
-    border-radius: 60%;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding: 4px;
+    color: rgb(12, 211, 71);
+    font-size: large;
   }
   .not-active{
     
     padding-left: 4px;
     padding-right: 4px;
   }
+
+.second-nav{
+  /* position: -webkit-sticky; */
+  position: sticky;
+  top: 0;
+}
+
+.menu-btn{
+  background-color: black;
+}
+.menu-btn:hover{
+  background-color: white;
+  color: black;
+}

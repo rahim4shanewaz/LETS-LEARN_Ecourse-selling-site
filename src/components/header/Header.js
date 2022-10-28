@@ -7,125 +7,157 @@ import './Header.css'
 const Header = () => {
     return (
         <div>
+
+          <div>
+          <div className=" h-44 flex justify-center items-center">
+                <div className="flex flex-col gap-5  ">
+                    <h1 className="text-5xl font-bold">LET'S LEARN SMARTLY</h1>
+                    <p className="text-center font-bold">Looking For skill, Hunt with <span className=" bg-black p-1 text-white">LET'S LEARN</span> </p>
+                </div>
+            </div>
+          </div>
+                  <div className="bgs  flex items-center p-6">
+        
             
-            <div className='p-5 text-center '>
-            
-            <div className="carousel w-full shadow-car">
-  <div id="slide1" className="carousel-item relative w-full ">
-    <div className='car-img '>
-    <img src="https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80" className="w-full" />
-    </div>
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide4" className="btn btn-circle">❮</a> 
-
-      <div className='flex w-full justify-end '>
-      
-      <div className='text-white car-text flex flex-col justify-start'>
-        <span className=' text1 text-4xl text-white'>Welcome</span>
-        <span className=' text2 text-4xl text-white'>Let's Learn</span>
-        <p >This is the website you can Learn with best instructor and earn a strong skill <br /> We have lots of courses. you can find your courses here. Lets start your Journey with us.  </p>
-        <div class="box-1 mt-3">
-            <div >
-            <NavLink to="/courses"><button className="btn btn-outline btn-secondary">>Check Our All Courses</button></NavLink>
-            </div>
+               <div className='m-10'>
+                 <h1 className="text-white text-3xl mb-5">WELCOME</h1>
+                 <h1 className="text-white text-5xl mb-5">Learn With LET'S LEARN</h1>
+                 <p className='text-white mb-5'>This is the website you can Learn with best instructor and earn a strong skill <br /> We have lots of courses. you can find your courses here. Lets start your Journey with us.  </p>
+                 
+                 <div>
+            <NavLink to="/courses"><button className="hover:bg-green-400 bg-transparent py-3 border text-2xl border-1 text-white font-semibold px-6">>Check Our All Courses</button></NavLink>
+           
         </div>
-      </div>
-      </div>
-
-
-
-     
-      <a href="#slide2" className="btn btn-circle">❯</a>
-    </div>
-  </div> 
-  <div id="slide2" className="carousel-item relative w-full">
-    <div className='car-img'>
-    <img src="https://images.unsplash.com/photo-1475669698648-2f144fcaaeb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
-    </div>
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide1" className="btn btn-circle">❮</a>
-
-
-
-      
-      <div className='flex w-full justify-end text-white'>
-      <div className='text-black car-text flex flex-col justify-start '>
-      <span className=' text3 text-4xl text-white'>Welcome</span>
-        <span className=' text4 text-4xl text-white'>Let's Learn</span>
-        <p className='text-white'>This is the website you can Learn with best instructor and earn a strong skill <br /> We have lots of courses. you can find your courses here. Lets start your Journey with us.  </p>
-        <div class="box-1 mt-3">
-            <div >
-            <NavLink to="/courses"><button className="btn btn-outline btn-secondary">>Check Our All Courses</button></NavLink>
-            </div>
         </div>
-      </div>
-      </div>
-      
-      <a href="#slide3" className="btn btn-circle">❯</a>
-    </div>
-  </div> 
-  <div id="slide3" className="carousel-item relative w-full">
-  <div className='car-img'>
-    <img src="https://images.unsplash.com/photo-1503428593586-e225b39bddfe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" />
-    </div>
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide2" className="btn btn-circle">❮</a> 
+                  </div>
 
 
 
-            <div className='flex w-full '> 
-            <div className='text-white car-text2 flex flex-col justify-start'>
-            <span className=' text3 text-4xl text-white'>Welcome</span>
-        <span className=' text4 text-4xl text-white'>Let's Learn</span>
-        <p>This is the website you can Learn with best instructor and earn a strong skill <br /> We have lots of courses. you can find your courses here. Lets start your Journey with us.  </p>
-        <div class="box-1 mt-3">
-            <div >
-            <NavLink to="/courses"><button className="btn btn-outline btn-secondary">>Check Our All Courses</button></NavLink>
+
+
+                    <div className='w-full mt-5'>
+                      <div className='md:grid-cols-1 grid lg:grid-cols-3  gap-4 mb-5'>
+
+
+                        <div className='md:col-span-3 lg:col-span-2 w-full'>
+
+                        <div className=" bg-white mb-5">
+                    <div className="flex flex-col gap-3 items-center pt-10 px-10">
+                        <h1 className="text-3xl text-center">Learn online in <br /> LET'S LEARN <br /> from the leaders  in business of Colorful Media</h1>
+                        
+                    </div> 
+
+                    <div className="p-6">
+                      <div className=" bg-black mb-5">
+                        <img className="opacity-50" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+
+                        
+                      </div>
+                      
+
+
+                       <div className="mb-3">
+                        <p><span className="font-black">More Hats!</span> <br /> All paid LET'S LEARN Online courses, with the exception of CORe, grant a Certificate of Completion. While each program can be completed on your own schedule, there are weekly deadlines to ensure you’re progressing through the course in step with your peers and taking full advantage of all networking and social learning opportunities.
+
+To earn a Certificate of Completion, you must complete all coursework in a thoughtful and timely manner, including meeting weekly deadlines, finishing assignments, offering feedback on others’ reflections, and contributing to conversations on the course platform.</p>
+
+                       </div>
+
+                       <div className="flex justify-between">
+                        
+                        <button className=" bg-black text-white hover:bg-slate-400 hover:border-0  px-6 py-2">Interested <span className=" mx-2 h-2 font-black px-2 py-1 w-2 bg-white text-black">5</span> </button>
+                       </div>
+                    </div>
+                        </div>
+
+                        </div>
+
+                        <div className=" wid flex flex-col gap-5">
+                      <div className="wid  bg-black mb-5">
+                    <div>
+                       
+                          <img className="h-3/5 object-cover w-full" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+                    </div>
+                    <div className="text-white p-2">
+                       <p className="text-2xl mb-2">Why Us</p>
+                        <p>Let's Learn does a great job of making its free courses easy to find, along with the filter means you can find your chosen course in no time. With all of Coursera's free courses, you have the option to Purchase the Course, meaning you will earn a certificate when you successfully complete the course</p>
+                    </div>
+                </div>
+
+               
+                <div className="wid bg-white mb-5">
+                    <div className="wid h-20 bg-black  flex flex-col justify-center  p-3">
+                        <h1 className="text-white  text-2xl">What You Get</h1>
+                    </div>
+                    <div className="p-3">
+                        <div className="wid">
+                            <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-3">
+                                <div className="w-full h-44 bg-black ">
+                                    <img className="w-full h-full object-cover hover:drop-shadow-md  hover:opacity-50" src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+                                </div>
+                                <div className="w-full h-44 bg-black">
+                                    <img className="w-full h-full object-cover hover:drop-shadow-md  hover:opacity-50" src="https://images.unsplash.com/photo-1611784728558-6c7d9b409cdf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="" />
+                                </div>
+                                <div className="w-full h-44 bg-black">
+                                    <img className="w-full h-full object-cover hover:drop-shadow-md  hover:opacity-50" src="https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=945&q=80" alt="" />
+                                </div>
+                                <div className="w-full h-44 bg-black">
+                                    <img className="w-full h-full object-cover hover:drop-shadow-md  hover:opacity-50" src="https://images.unsplash.com/photo-1612861389438-73b717dc088e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+                <div className="wid bg-white mb-5">
+                    <div className="wid h-20 bg-black  flex flex-col justify-center  p-3">
+                        <h1 className="text-white  text-2xl">Follow Us on</h1>
+                    </div>
+                    <div className="p-3">
+                        <div className="wid">
+                            <div>
+                            <div className='flex justify-evenly'>
+                <button class=" text-2xl hover:text-green-500 px-2 h-10"><span className='bg-white font-black px-2 hover:bg-green-600 text-black '>f</span></button>
+                <button class=" text-2xl hover:text-green-500 px-2 h-10"><span className='bg-white font-black px-2 hover:bg-green-600 text-black '>t</span></button>
+                <button class=" text-2xl hover:text-green-500 px-2 h-10"><span className='bg-white font-black px-2 hover:bg-green-600 text-black '>G</span></button>
+                <button class=" text-2xl hover:text-green-500 px-2 h-10"><span className='bg-white font-black px-2 hover:bg-green-600 text-black '>in</span></button>
+                
+                
             </div>
-        </div>
-      </div>
-            </div>
-      
+                            </div>
+                           
 
-      
+                        </div>
+                    </div>
+                    
+                </div>
+                <div className="wid bg-white mb-5">
+                    <div className="wid h-20 bg-black  flex flex-col justify-center  p-3">
+                        <h1 className="text-white  text-2xl">Subscribe</h1>
+                    </div>
+                    <div className="p-3">
+                        <div className="wid">
+                            <div>
+                               <p>Enter your e-mail below and get notified on the latest Courses.</p>
+                               <input className="border border-black w-full p-3 mt-2" placeholder="Enter Your e-mail" type="text" />
+                               <button className="mt-2 bg-red-600 text-center h-12 w-full hover:bg-slate-400 font-semibold">Subscribe</button>
+                            </div>
+                           
 
-
-
-      <a href="#slide4" className="btn btn-circle">❯</a>
-    </div>
-  </div> 
-  <div id="slide4" className="carousel-item relative w-full">
-  <div className='car-img'>
-    <img src="https://images.unsplash.com/photo-1509701852059-c221a6f1e878?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=791&q=80" />
-    </div>
-    
-    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide3" className="btn btn-circle">❮</a> 
-
-
-
-      <div className='flex w-full'>
-      <div className='text-white car-text2 flex flex-col justify-start'>
-      <span className=' text3 text-4xl'>Welcome</span>
-        <span className=' text4 text-4xl text-white'>Let's Learn</span>
-        <p>This is the website you can Learn with best instructor and earn a strong skill <br /> We have lots of courses. you can find your courses here. Lets start your Journey with us.  </p>
-        <div class="box-1 mt-3">
-            <div >
-            <NavLink to="/courses"><button className="btn btn-outline btn-secondary">>Check Our All Courses</button></NavLink>
-            </div>
-        </div>
-      </div>
-      </div>
-      
+                        </div>
+                    </div>
+                    
+                </div>
 
 
 
-      <a href="#slide1" className="btn btn-circle">❯</a>
-    </div>
-  </div>
-</div>
-            </div>
-            <HomeBody></HomeBody>
+                       </div>
+
+                      </div>
+                 
+                    </div>
+                    
         </div>
     );
 };

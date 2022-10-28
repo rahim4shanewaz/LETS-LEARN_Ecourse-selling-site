@@ -4,6 +4,13 @@ import './Blog.css'
 const Blog = () => {
     return (
         <div>
+
+<div className=" h-44 flex justify-center items-center">
+                <div className="flex flex-col gap-5  ">
+                    <h1 className="text-5xl font-bold">Check our Blog</h1>
+                    <p className="text-center font-bold">Learn some info, Hunt with <span className=" bg-black p-1 text-white">LET'S LEARN</span> </p>
+                </div>
+            </div>
             <div className='flex gap-5 m-10 justify-center'>
             <div className="login-div1">
                 <h1 className='text-3xl p-2'>What is CORS?</h1>

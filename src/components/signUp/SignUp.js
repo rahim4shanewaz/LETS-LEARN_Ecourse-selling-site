@@ -3,7 +3,7 @@ import React, { useContext, useState } from 'react';
 import { Form, Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/ContextApi';
 import './SignUp.css'
-import { BeakerIcon } from '@heroicons/react/24/solid'
+
 
 const SignUp = () => {
 
