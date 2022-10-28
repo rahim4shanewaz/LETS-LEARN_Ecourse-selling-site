@@ -44,11 +44,13 @@ const CourseDetails = () => {
 
                 <div  className="card box rounded-none  lg:card-side bg-base-100 shadow-xl">
                 <figure><img className='' src={course.image} alt="Album"/></figure>
-                <div  className="card-body lg:w-2/5">
-                    <div  ref={ref}>
-                    <h2 className="card-title text-5xl">{course.title}</h2>
-                    <p className='text-black'>{course.description}</p>
-                    <p className='text-2xl'>Price:   ${course.price}</p>
+                <div   ref={ref} className="card-body lg:w-2/5">
+                    <div className='p-2'>
+                    <h2 className="card-title  text-5xl">{course.title}</h2>
+                    <hr />
+                    <p className='text-black '>{course.description}. In this course, Visual Storytelling with Photography, you'll use photography as the medium, as you gain the skills to identify and create powerful, meaningful, and enticing visual stories. You'll learn about composition, lighting, framing, movement and how to capture a story from a portrait, and moment to moment. Plus, you'll leave with a compelling photo essay designed by you. </p>
+                    <hr />
+                    <p className='text-2xl '>Price:   ${course.price}</p>
                     <p className='text-xl'>Duration:  {course.duration} <small>month</small> </p>
                     <p className='text-xl'>Rating: {course.rating}</p>
                     </div>

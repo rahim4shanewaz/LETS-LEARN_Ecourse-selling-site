@@ -59,7 +59,9 @@ const Header = () => {
                        <div className="mb-3">
                         <p><span className="font-black">More Hats!</span> <br /> All paid LET'S LEARN Online courses, with the exception of CORe, grant a Certificate of Completion. While each program can be completed on your own schedule, there are weekly deadlines to ensure you’re progressing through the course in step with your peers and taking full advantage of all networking and social learning opportunities.
 
-To earn a Certificate of Completion, you must complete all coursework in a thoughtful and timely manner, including meeting weekly deadlines, finishing assignments, offering feedback on others’ reflections, and contributing to conversations on the course platform.</p>
+To earn a Certificate of Completion, you must complete all coursework in a thoughtful and timely manner, including meeting weekly deadlines, finishing assignments, offering feedback on others’ reflections, and contributing to conversations on the course platform. As digital media becomes more visually oriented, having the expertise and understanding of how to engage audiences through visual media becomes more important. Whether you’re a budding photographer, artist, videographer, or visual communications professional, being skilled in communicating messages, emotions, narratives and information in a way which reaches viewers at a deep and lasting level is critical for every profession. 
+
+In this course, Visual Storytelling with Photography, you'll use photography as the medium, as you gain the skills to identify and create powerful, meaningful, and enticing visual stories. You'll learn about composition, lighting, framing, movement and how to capture a story from a portrait, and moment to moment. Plus, you'll leave with a compelling photo essay designed by you. </p>
 
                        </div>
 
@@ -80,7 +82,7 @@ To earn a Certificate of Completion, you must complete all coursework in a thoug
                     </div>
                     <div className="text-white p-2">
                        <p className="text-2xl mb-2">Why Us</p>
-                        <p>Let's Learn does a great job of making its free courses easy to find, along with the filter means you can find your chosen course in no time. With all of Coursera's free courses, you have the option to Purchase the Course, meaning you will earn a certificate when you successfully complete the course</p>
+                        <p>Let's Learn does a great job of making its free courses easy to find, along with the filter means you can find your chosen course in no time. With all of Coursera's free courses, you have the option to Purchase the Course, meaning you will earn a certificate when you successfully complete the course. </p>
                     </div>
                 </div>
 

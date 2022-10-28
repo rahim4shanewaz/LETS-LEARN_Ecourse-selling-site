@@ -62,9 +62,9 @@ const Category = () => {
                 {
                     categories.map(allCategory => <div  key= {allCategory.id}> 
                     
-                                                <div className="card card-compact w-4/5 mb-10 mx-auto mt-10 bg-base-100 shadow-xl">
+                                                <div className="card rounded-0 card-compact w-4/5 mb-10 mx-auto mt-5 bg-base-100 shadow-xl">
                             <figure><img src={allCategory.image} alt="Shoes" /></figure>
-                            <div className="card-body">
+                            <div className="card-body rounded-0">
                                 <h2 className="card-title">{allCategory.title}</h2>
                                 <h2 className="card-title">Duration: {allCategory.duration}</h2>
                                 <p className='text-2xl'>Price: {allCategory.price}</p>

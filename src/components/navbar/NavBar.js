@@ -46,7 +46,7 @@ const handleLogout = () => {
                   </label>
 
 
-                  <ul tabIndex={0} className=" text-center bg-black menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 w-52">
+                  <ul tabIndex={0} className=" text-center bg-black menu-compact dropdown-content mt-3 p-2 shadow  w-52">
                   
                     <div className='flex flex-col justify-center items-center '>
 
