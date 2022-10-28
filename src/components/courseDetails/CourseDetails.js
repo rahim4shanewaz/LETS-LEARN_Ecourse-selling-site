@@ -42,7 +42,7 @@ const CourseDetails = () => {
           
         
 
-                <div  className="card box rounded-none  lg:card-side bg-base-100 shadow-xl">
+                <div  className="card box rounded-none p-3  lg:card-side bg-base-100 shadow-xl">
                 <figure><img className='' src={course.image} alt="Album"/></figure>
                 <div   ref={ref} className="card-body lg:w-2/5">
                     <div className='p-2'>
