@@ -10,7 +10,7 @@ const AboutUs = () => {
                 <h1 className='text-2xl p-2'>We believe</h1>
 
                 <h1 className='text-xl p-5'>
-Learning is the source of human progress.
+Learning is the source of human progress.sss
 
 It has the power to transform our world
 from illness to health,
