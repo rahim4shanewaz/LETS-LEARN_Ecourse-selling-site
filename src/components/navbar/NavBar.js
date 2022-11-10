@@ -15,7 +15,7 @@ const NavBar = () => {
     setAccepted(event.target.checked);
   
   }
-  // console.log(user)
+  
 
 const handleLogout = () => {
   logOut()

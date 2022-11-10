@@ -11,7 +11,7 @@ const Category = () => {
         .then(res => res.json())
         .then(data => setCategories(data));
     },[])
-    console.log(categories.length);
+    
     return (
         <div>
             <div className=" h-44 flex justify-center items-center">

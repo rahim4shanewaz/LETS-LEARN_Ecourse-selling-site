@@ -22,12 +22,12 @@ const SignUp = () => {
     const imgUrl= form.imgUrl.value;
     const email= form.email.value;
     const password= form.password.value;
-    console.log(name,imgUrl,email,password);
+    
 
     createUser(email, password)
     .then(result => {
       const user = result.user;
-      console.log(user);
+      
       form.reset();
       handleUpadetUserProfile(name, imgUrl);
 
@@ -58,7 +58,7 @@ const SignUp = () => {
     .then(result => {
         const user = result.user;
         navigate(from, {replace: true});
-        console.log(user)
+        
         
     })
     .catch( error => {
@@ -74,7 +74,7 @@ const handleGitHubSignIn = () =>{
   .then(result => {
     const user = result.user;
     navigate(from, {replace: true});
-    console.log(user)
+    
     
   })
   .catch( error => {
